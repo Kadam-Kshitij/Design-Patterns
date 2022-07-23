@@ -1,3 +1,9 @@
+// == Output ==
+// Base 23
+// Base 76
+// Base 76
+// Base 45
+
 #include <iostream>
 
 //=============================================================
@@ -6,7 +12,7 @@ class Base
 	int val;
 	static Base* obj;
 
-    // Make the constructor and copy constructor private
+    	// Make the constructor and copy constructor private
 	Base( int x = 0 ) : val{ x }
 	{
 	}
@@ -15,7 +21,7 @@ class Base
 	{
 	}
 public:
-    // Static function which returns a new instance
+        // Static function which returns a new instance
 	static Base* getInstance( int i )
 	{
 		if ( obj == NULL )
