@@ -26,6 +26,10 @@ public:
 	{
 	}
 
+	virtual ~Base()
+	{
+	}
+
 	virtual void handle( int request ) const = 0;
 
 	void setNext( Base* ptr )
@@ -44,6 +48,9 @@ class Handler1 : public Base
 {
 public:
 	Handler1() : Base{ 1 }
+	{
+	}
+	~Handler1()
 	{
 	}
 
@@ -70,6 +77,9 @@ public:
 	Handler2() : Base{ 2 }
 	{
 	}
+	~Handler2()
+	{
+	}
 
 	void handle( int request ) const override
 	{
@@ -92,6 +102,9 @@ class Handler3 : public Base
 {
 public:
 	Handler3() : Base{ 3 }
+	{
+	}
+	~Handler3()
 	{
 	}
 
